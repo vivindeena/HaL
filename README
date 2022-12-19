@@ -1,0 +1,10 @@
+=====
+README 
+=====
+
+
+
+1. Open terminal and run sh install.sh
+
+2. After instalation is done, open System Prefernces 
+3. Search for login items, and add the HaL.app which you can find in your Application Folder
