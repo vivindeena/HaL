@@ -19,3 +19,5 @@ sudo cp hal.sh /usr/local/bin/hal
 cp com.wow.hal.plist /Users/$user/Library/LaunchAgents/
 launchctl load -w /Users/$user/Library/LaunchAgents/com.wow.hal.plist
 launchctl start com.wow.hal
+
+echo "Run hal init to setup username and password"

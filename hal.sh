@@ -1,5 +1,7 @@
 #!/bin/bash
-source ./user.conf
+user=$(id -un)
+source /Users/$user/.hal/user.conf
+
 function get_status() {
     curl -s "http://phc.prontonetworks.com/cgi-bin/authlogin" | grep "logged" >/dev/null
     return $?
@@ -66,6 +68,12 @@ elif [[ $1 == restart ]]; then
     launchctl start com.wow.hal
 elif [[ $1 == status ]]; then
     print_status
+elif [[ $1 == init ]]; then
+    echo -n "Username: "
+    read username
+    echo -n "Password: "
+    read -s password
+    echo "username=$username\npassword=$password" > /Users/$user/.hal/user.conf
 else
     echo "Invalid command"
 fi
