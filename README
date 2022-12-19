@@ -2,9 +2,22 @@
 README 
 =====
 
+This is a tool for MacOS users, that let them login into the VIT wifi automatically
+
+Any bugs/ contributions are welcome...
 
 
 1. Open terminal and run sh install.sh
+2. Run "hal init" to setup you username and password
+3. After instalation is done, open System Prefernces 
+4. Search for login items, and add the HaL.app which you can find in your Application Folder
 
-2. After instalation is done, open System Prefernces 
-3. Search for login items, and add the HaL.app which you can find in your Application Folder
+
+Future plans:
+1. To make it run the script only if a network change is detected, instead of a loop in the background
+   idk how this affects battery life, so optimizations are coming 
+2. To expand into the tool into a general purpose tool that can be used to login to any hostspots
+3. multiplie profies that will help with differnet wifi logins
+4. Finding a way to disable to apple's login page
+
+
